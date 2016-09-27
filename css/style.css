@@ -1,0 +1,154 @@
+html, body {width:100%; height: 100%;}
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 50px;
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(54,171,221,1) 26%, rgba(54,171,221,1) 64%, rgba(255,255,255,1) 64%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(26%, rgba(255,255,255,1)), color-stop(26%, rgba(54,171,221,1)), color-stop(64%, rgba(54,171,221,1)), color-stop(64%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(54,171,221,1) 26%, rgba(54,171,221,1) 64%, rgba(255,255,255,1) 64%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(54,171,221,1) 26%, rgba(54,171,221,1) 64%, rgba(255,255,255,1) 64%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(54,171,221,1) 26%, rgba(54,171,221,1) 64%, rgba(255,255,255,1) 64%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 26%, rgba(54,171,221,1) 26%, rgba(54,171,221,1) 64%, rgba(255,255,255,1) 64%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+.boxForm {
+  color: #888888;
+  width: 740px;
+  background-color: #FFF;
+  margin:80px 0;
+  padding: 40px 75px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+}
+.boxForm > h1 {
+  font-weight: 500;
+  color:#36aadd;
+  font-size:3em;
+}
+.boxForm > p.lead {
+  font-size: 2.2em;
+  color: #888888;
+}
+.boxForm .form-group {
+  text-align: left;
+}
+.boxForm label {
+  font-size: 1.2em;
+  font-weight :normal;
+}
+.boxForm .form-control {
+  border-radius: 0;
+  height: 45px;
+}
+.boxForm select {
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  background:#FFFFFF url("../img/chevron-down.png") 95.5% 50% no-repeat;
+}
+.boxForm .btn {
+  margin: 25px 0;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: .1em;
+  width:100%;
+  border:0;
+  border-bottom:solid 4px;
+}
+.boxForm .btn-primary {
+  background-color: #bbd550;
+  border-color: #9fbc2d;
+}
+.boxForm .btn-primary:hover {
+  background-color: #9fbc2d;
+  border-color: #9fbc2d;
+}
+.boxForm .recover {
+  text-align: center;
+}
+.boxForm .link {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #36aadd;
+  letter-spacing: .1em;
+}
+.navbar-inverse {
+  background-color: #464646;
+  border-color: #333;
+}
+.navbar-brand {
+  padding: 0 15px;
+}
+.navbar {
+  min-height: 60px;
+}
+
+@media (max-width: 768px) {
+  .boxForm {
+    width: 680px;
+    padding: 40px 45px;
+  }
+  .boxForm label{
+    display: inline-table;
+    width: 30%;
+  }
+  .boxForm .form-control {
+    display:inline-table;
+    width: 65%;
+  }
+  .boxForm .form-control#ano {
+    width:40%;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    background: none;
+  }
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .boxForm {
+    width: 320px;
+    padding: 20px 0px;    margin:10px 0;
+    box-shadow: none;
+  }
+  .boxForm form {
+    background-color: #eeeeee;
+    border-top: solid 4px #36aadd;
+    width:100%;
+    padding: 10px 5px 40px;
+  }
+  .boxForm > h1 {
+    font-size: 2.2em;
+    padding: 0 12px;
+  }
+  .boxForm > p.lead {
+    font-size: 1.4em;
+  }
+  .boxForm label{
+    display: none;
+  }
+  .boxForm .form-group{
+    margin-bottom:0;
+  }
+  .boxForm .nopadl {
+    padding-left: 0;
+  }
+  .boxForm .nopadr {
+    padding-right: 0;
+  }
+  .boxForm .form-control {
+    width: 100%;
+  }
+  .boxForm .form-control#ano {
+    width:100%;
+  }
+}
